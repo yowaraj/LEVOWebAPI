@@ -154,4 +154,8 @@ C:\Users\yowaraj\Documents\LEVO\LevoWebAPI\LevoWebAPI\obj\Debug\netcoreapp3.1\Le
 C:\Users\yowaraj\Documents\LEVO\LevoWebAPI\LevoWebAPI\obj\Debug\netcoreapp3.1\LevoWebAPI.dll
 C:\Users\yowaraj\Documents\LEVO\LevoWebAPI\LevoWebAPI\obj\Debug\netcoreapp3.1\LevoWebAPI.pdb
 C:\Users\yowaraj\Documents\LEVO\LevoWebAPI\LevoWebAPI\obj\Debug\netcoreapp3.1\LevoWebAPI.genruntimeconfig.cache
+C:\Users\yowaraj\Documents\LEVO\LevoWebAPI\LevoWebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\yowaraj\Documents\LEVO\LevoWebAPI\LevoWebAPI\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Users\yowaraj\Documents\LEVO\LevoWebAPI\LevoWebAPI\bin\Debug\netcoreapp3.1\Autofac.dll
+C:\Users\yowaraj\Documents\LEVO\LevoWebAPI\LevoWebAPI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
 C:\Users\yowaraj\Documents\LEVO\LevoWebAPI\LevoWebAPI\obj\Debug\netcoreapp3.1\LevoWebAPI.csprojAssemblyReference.cache

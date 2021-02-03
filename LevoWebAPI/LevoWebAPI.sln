@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevoWebAPI", "LevoWebAPI\LevoWebAPI.csproj", "{C0DF8C19-137E-4123-8CA0-CC035CF74E2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LevoWebAPI", "LevoWebAPI\LevoWebAPI.csproj", "{C0DF8C19-137E-4123-8CA0-CC035CF74E2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestLevoWebAPI", "NUnitTestLevoWebAPI\NUnitTestLevoWebAPI.csproj", "{8AA7487F-A1A0-4AF7-B445-E4131FD4354E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C0DF8C19-137E-4123-8CA0-CC035CF74E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0DF8C19-137E-4123-8CA0-CC035CF74E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0DF8C19-137E-4123-8CA0-CC035CF74E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AA7487F-A1A0-4AF7-B445-E4131FD4354E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AA7487F-A1A0-4AF7-B445-E4131FD4354E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AA7487F-A1A0-4AF7-B445-E4131FD4354E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AA7487F-A1A0-4AF7-B445-E4131FD4354E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

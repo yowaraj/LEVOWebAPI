@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using LevoWebAPI.Models;
 using LevoWebAPI.Helpers;
+using LevoWebAPI.Services;
 
 namespace LevoWebAPI.Controllers
 {
@@ -12,33 +11,23 @@ namespace LevoWebAPI.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly UserDBContext _context;
-        public UserController(UserDBContext context)
+        private readonly IUserService _userService;
+
+        public UserController(IUserService userService)
         {
-            _context = context;
+            _userService = userService;
         }
 
         [CustomAuthorization, HttpGet]
-        public async Task<ActionResult<IEnumerable<UserInfo>>> GetAllUser()
+        public IEnumerable<UserInfo> GetAllUser()
         {
-            return await _context.UserInfo.ToListAsync();
+            return _userService.GetAllUser();
         }
 
         [HttpPost]
         public async Task<ActionResult> PostUser(UserInfo userInfo)
-        {           
-            if(UserInfoExists(userInfo.Email))
-                return BadRequest(new { message = "User already exist" });
-
-            _context.UserInfo.Add(userInfo);
-            await _context.SaveChangesAsync();
-
-            return Ok("Successfully Added");
-        }
-
-        private bool UserInfoExists(string email)
-        {
-            return _context.UserInfo.Any(x => x.Email.Equals(email));
+        { 
+            return Ok(_userService.PostUser(userInfo));
         }
     }
 }
